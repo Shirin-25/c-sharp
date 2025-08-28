@@ -1,0 +1,18 @@
+using System;
+class Digit
+{
+    public static void Main()
+    {
+        Console.WriteLine("enter a number");
+        int number = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(number);
+        int lastdigit = number % 10;
+        int firstdigit = number;
+        while (firstdigit >= 10)
+        {
+            firstdigit /= 10;
+        }
+        Console.WriteLine("The first digit is" + firstdigit);
+        Console.WriteLine("the last digitis" + lastdigit);
+    }
+}
