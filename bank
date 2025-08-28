@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Bank
+{
+    internal class BankAccount
+    {
+        string name;
+        int AccountNo;
+        int balance;
+
+        public BankAccount(string name, int accountNo, int balance)
+        {
+            this.name = name;
+            this.AccountNo = accountNo;
+            this.balance = balance;
+        }
+        public void Deposit(int amount)
+        {
+
+        }
+
+
+
+
+    
+    }
+}
