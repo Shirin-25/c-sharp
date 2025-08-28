@@ -1,0 +1,34 @@
+using System;
+class vechile
+{
+    public void engine()
+    {
+        Console.WriteLine("engine");
+    }
+}
+class wheel : vechile
+{
+    public void rotate()
+    {
+        Console.WriteLine("rotate");
+    }
+}
+class color : vechile
+{
+
+    public void black()
+    {
+        Console.WriteLine("black");
+    }
+}
+class prog
+{
+    static void Main()
+    {
+        wheel w=new wheel();
+        color c=new color();
+        w.rotate();
+        c.black();
+    }
+}
+
