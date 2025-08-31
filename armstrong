@@ -1,0 +1,24 @@
+using System;
+class Armstrong
+{
+    static void Main()
+    {
+        Console.WriteLine("enter a number:");
+        int num = Convert.ToInt32(Console.ReadLine());
+        int Sum = 0, temp = num;
+        while (temp > 0)
+        {
+            int digit = temp % 10;
+            Sum += digit * digit * digit;
+            temp /= 10;
+        }
+        if (num == Sum)
+        {
+            Console.WriteLine(num + " is an Armstrong number");
+        }
+        else
+        {
+            Console.WriteLine(num + " is not an Armstrong number");
+        }
+    }
+}
