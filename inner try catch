@@ -1,0 +1,31 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+
+        try
+        {
+            //nested try block
+            try
+            {
+
+                Console.WriteLine("enter the number");
+                int num = Convert.ToInt32(Console.ReadLine());
+                int Dividebyzero = 6 / num;
+                Console.WriteLine(Dividebyzero);
+            }
+            //inner catch block
+            catch (Exception e)
+            {
+                Console.WriteLine("inner catch is executed" + e.Message);
+            }
+        }
+        //outer catch block
+        catch (DivideByZeroException e)
+        {
+            Console.WriteLine("outer catch block is executed" + e.Message);
+
+        }
+    }
+}
