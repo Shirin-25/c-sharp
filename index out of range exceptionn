@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+
+        
+        try
+        {
+            
+            Console.WriteLine(numbers[5]);
+        }
+        catch (IndexOutOfRangeException ex)
+        {
+            
+            Console.WriteLine("Oops! Index is out of bounds.");
+            Console.WriteLine("Exception Message: " + ex.Message);
+        }
+    }
+}
